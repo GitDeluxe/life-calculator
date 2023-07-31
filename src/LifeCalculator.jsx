@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Result from './Result';
 import TimeForm from './Formulaire';
+;
 // import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 // import { Doughnut } from "react-chartjs-2";
 
@@ -22,7 +23,7 @@ const LifeCalculator = () => {
     const percentage = (days / dayInYear) * 100
     return { days, percentage }
   }
-
+  
   const calculateTime = ({
     sleepTimePerDay,
     socialNetworkTimePerDay,
@@ -75,6 +76,7 @@ const LifeCalculator = () => {
 
   return (
     <div className='container text-left'>
+
       <h1>Screen Time Calculator</h1>
       <TimeForm onSubmit={calculateTime} />
       {results && (

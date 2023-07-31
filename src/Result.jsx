@@ -47,7 +47,7 @@ const Result = ({ results }) => {
         <div className="mt-4 p-4 border border-success rounded container">
             <div className='row'>
             <h4>Time Distribution</h4>
-            <div class="col-lg-4 col-sm-12 mb-4 ">
+            <div className="col-lg-4 col-sm-12 mb-4 ">
                 <Pie key={Math.random()} data={data} options={options} />
             </div>
             <div className="col-lg-8 col-sm-12">
@@ -61,9 +61,8 @@ const Result = ({ results }) => {
                     <p>{Math.round(socialNetwork.percentage)}% de votre temps sur les réseaux sociaux par année, soit {Math.round(socialNetwork.days)} jours par an  </p>
                     <p>{Math.round(socialLife.percentage)}% de votre temps avec vos proches par année, soit {Math.round(socialLife.days)} jours par an  </p>
                     <p>{Math.round(sleep.percentage)}% de votre temps à dormir par année, soit {Math.round(sleep.days)} jours par an  </p>
-                    <p>{Math.round(lifetime)}% de votre temps est a vous, soit {Math.round(sleep.days)} jours par an  </p>
+                    <p>Vous avez {Math.round(lifetime)}% de votre temps pour faire ce que vous voulez, soit {Math.round(lifetime)} jours sur 365  </p>
 
-           
 
             </div>
             </div>
